@@ -1,0 +1,154 @@
+a = int(input())
+b = int(input())
+
+if a>b:
+    print(b)
+else:
+    print(a)
+    
+#2
+a = int(input())
+
+if a>0:
+    print(1)
+elif a<0:
+    print(-1)
+else:
+    print(0)
+    
+#3
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a<b:
+    if a<c:
+        print(a)
+    else: 
+        print(c)
+else: 
+    if b<c:
+        print(b)
+    else:
+        print(c)
+
+#4
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a==b and b==c:
+    print(3)
+elif a==b or b==c or a==c:
+    print(2)
+else:
+    print(0)
+
+#5
+a = int(input())
+b = int(input())
+
+c = int(input())
+d = int(input())
+
+if a==c or b==d:
+    print('YES')
+else:
+    print('NO')
+    
+#6
+a = int(input())
+b = int(input())
+x = (a+b)%2 
+c = int(input())
+d = int(input())
+if x == (c+d)%2:
+    print('YES')
+else:
+    print('NO')
+
+#7
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+if a-c<=1 and a-c>=-1:
+    if b-d<=1 and b-d>=-1:
+        print('YES')
+    else:
+        print('NO')
+else:
+    print('NO')
+
+#8
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+if a-c==b-d or c-a==b-d:
+    print('YES')
+else:
+    print('NO')
+
+#9
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+if a-c==b-d or c-a==b-d:
+    print('YES')
+elif a==c or b==d:
+    print('YES')
+else:
+    print('NO')
+    
+#10
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+if a+2==c or b+2==d or b-2==d or a-2==c:
+    if a+1==c or b+1==d or a-1==c or b-1==d:
+        print('YES')
+    else:
+        print('NO')
+
+else:
+    print('NO')
+    
+#11
+a = int(input())
+b = int(input())
+c = int(input())
+
+if c%2 == 0 or (a*b)%2 ==1:
+    if (a*b)-2>=c and c!=1:
+        print('YES')
+    else:
+        print('NO')
+else:
+    if c==21:
+        print('YES')
+    else:
+        print('NO')
+
+#12
+a = int(input())
+
+x = a%4
+y = a%100
+z = a%400
+
+if z != 0:
+    if x == 0 and y != 0:
+        print('LEAP')
+    else:
+        print('COMMON')
+else:
+        print('LEAP')
+
+
